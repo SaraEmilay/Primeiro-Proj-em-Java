@@ -1,0 +1,32 @@
+import java.util.Scanner;
+ public class Beleza {
+  int dente;
+  int pata=0;
+  int bucho=0;
+  int orelhas=0;
+  int temp=0;
+  static int totalNota=0;
+
+  public static void main(String[] args) {
+   Scanner Leitura = new Scanner(System.in);
+   System.out.println("Que nota você daria para as patinhas da Nina ");
+          int pata= Leitura.nextInt();
+   System.out.println("Que nota você dá para os dentinhos da nina ");
+          int dente= Leitura.nextInt();
+   System.out.println("Que nota você dá para o bucho da nina ");
+          int bucho= Leitura.nextInt();
+   System.out.println("Que nota você dá para as orelhas da nina ");
+          int orelhas= Leitura.nextInt();
+   System.out.println("O quão boazinha é a nina");
+   int temp=Leitura.nextInt();
+   System.out.println("Certo, agora vamos para a nota da Nina");
+          totalNota= (pata*1+orelhas*1+ dente*3+bucho*1+temp*4)/10;
+   System.out.println("A nota da nina é "+ totalNota);
+   if (totalNota>7){
+    System.out.println("Nina é um bom gatinho");
+
+   }else {
+    System.out.println("Nina é umm gatinho mau ");
+   }
+  }
+ }
